@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CollaborationResultCell" customModule="EmployeesCollaborationStats" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kFB-H2-TE4" userLabel="employee1">
+                    <rect key="frame" x="12" y="7.9999999999999982" width="98.666666666666671" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HFE-P3-VML" userLabel="employee2">
+                    <rect key="frame" x="122.66666666666669" y="7.9999999999999982" width="99" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d8N-oj-r0i" userLabel="projectId">
+                    <rect key="frame" x="233.66666666666666" y="7.9999999999999982" width="98.666666666666657" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhP-GD-uTb" userLabel="daysOfWork">
+                    <rect key="frame" x="344.33333333333331" y="7.9999999999999982" width="98.666666666666686" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="d8N-oj-r0i" firstAttribute="width" secondItem="kFB-H2-TE4" secondAttribute="width" id="2ak-OP-BDN"/>
+                <constraint firstItem="XhP-GD-uTb" firstAttribute="width" secondItem="kFB-H2-TE4" secondAttribute="width" id="5iS-A8-SZ2"/>
+                <constraint firstItem="kFB-H2-TE4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="BpV-Iw-LLz"/>
+                <constraint firstItem="HFE-P3-VML" firstAttribute="width" secondItem="kFB-H2-TE4" secondAttribute="width" id="Fj0-j6-72f"/>
+                <constraint firstItem="d8N-oj-r0i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Iq3-X5-ym0"/>
+                <constraint firstItem="XhP-GD-uTb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Lun-f2-4xP"/>
+                <constraint firstItem="kFB-H2-TE4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="TVD-RX-K0C"/>
+                <constraint firstItem="XhP-GD-uTb" firstAttribute="leading" secondItem="d8N-oj-r0i" secondAttribute="trailing" constant="12" id="Voi-sp-6Mx"/>
+                <constraint firstItem="HFE-P3-VML" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Zdl-cR-39T"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="XhP-GD-uTb" secondAttribute="bottom" constant="8" id="bKR-BB-e0R"/>
+                <constraint firstItem="d8N-oj-r0i" firstAttribute="leading" secondItem="HFE-P3-VML" secondAttribute="trailing" constant="12" id="fj9-96-gRY"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="HFE-P3-VML" secondAttribute="bottom" constant="8" id="hdj-ef-nUd"/>
+                <constraint firstItem="HFE-P3-VML" firstAttribute="leading" secondItem="kFB-H2-TE4" secondAttribute="trailing" constant="12" id="nu6-DI-Xvr"/>
+                <constraint firstAttribute="trailing" secondItem="XhP-GD-uTb" secondAttribute="trailing" constant="12" id="qGd-z9-kbo"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kFB-H2-TE4" secondAttribute="bottom" constant="8" id="vk1-iw-YQ5"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="d8N-oj-r0i" secondAttribute="bottom" constant="8" id="z5T-fX-0ig"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="daysOfWorkLabel" destination="XhP-GD-uTb" id="Wm6-mP-ZeX"/>
+                <outlet property="employeeLabel1" destination="kFB-H2-TE4" id="ZaI-VG-u5z"/>
+                <outlet property="employeeLabel2" destination="HFE-P3-VML" id="l7a-f0-jJb"/>
+                <outlet property="projectIdLabel" destination="d8N-oj-r0i" id="Qp1-eB-3AE"/>
+            </connections>
+            <point key="canvasLocation" x="173.2824427480916" y="-280.28169014084506"/>
+        </view>
+    </objects>
+</document>
